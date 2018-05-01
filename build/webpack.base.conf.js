@@ -60,7 +60,7 @@ module.exports = {
                         <span slot="description">${demoBlock.description}</span>
                         <span slot="source">${demoBlock.hljsCode} </span>
                         <span slot="example">${demoBlock.example}</span>
-                        ${demoBlock.code.replace(/</g,'&lt;').replace(/>/g, '&gt')}
+                        ${demoBlock.code.replace(/</g,'&lt;').replace(/>/g, '&gt;')}
                       </demo-block>`;
               },
               rules: {

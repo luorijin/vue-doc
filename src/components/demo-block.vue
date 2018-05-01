@@ -41,8 +41,8 @@
 				this.open=!this.open;
 			},
 			clip(){
-				console.log(this.code);
-				var code=this.$refs.copy.innerHTML;
+				var code=this.$refs.copy.innerHTML.replace(/&lt;/g,'<').replace(/&gt;/g, '>')
+				console.log(code)
 				const clipboard = new Clipboard('.copy', {
                     text () {
                         return code;
