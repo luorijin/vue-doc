@@ -40,7 +40,7 @@ export default {
 }
 </script>
 <style lang="less">
-   @import "~@/less/var.less";
+   @import "~@/src/less/var.less";
 	.collapse-title{
 		height: 2rem;
 		padding-left: 1rem;

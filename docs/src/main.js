@@ -7,7 +7,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import './assets/ionicons.css';
 import './assets/atom-one-light.css';
 import router from './router'
-import demoBlock from '@/components/demo-block';
+import demoBlock from '@/src/components/demo-block';
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 /* eslint-disable no-new */

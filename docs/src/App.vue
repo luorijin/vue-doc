@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import navData from '@/configData/nav.config.json';
-import navList from '@/components/nav-list'
+import navData from '@/src/configData/nav.config.json';
+import navList from '@/src/components/nav-list'
 export default {
   name: 'App',
   data(){
@@ -35,4 +35,4 @@ export default {
 }
 </script>
 
-<style lang="less" src="@/less/body.less"></style>
+<style lang="less" src="@/src/less/body.less"></style>
