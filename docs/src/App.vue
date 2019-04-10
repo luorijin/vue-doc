@@ -7,11 +7,6 @@
         </div>
     </div>
     <div class="luo-container">
-        <header>
-            <div class="container-2">
-              <div class="component-title">LUO-UI</div>
-            </div>
-       </header>
         <div class="container markdown-body">
             <router-view/>
         </div>

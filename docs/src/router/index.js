@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import alert from '@/markdown/alert.md';
+import upload from '@/markdown/upload.md';
 var components={
-	alert
+	upload
 };
 var routes=[];
 for(var key in components){
