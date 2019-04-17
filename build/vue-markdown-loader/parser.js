@@ -100,7 +100,7 @@ Parser.prototype.fetchLives = function () {
     live = DEMO_REGEX.exec(this.source)
     if (live) {
       let liveName = this.options.livePattern.exec(live[0])
-      this.code=live[1].match(PRE_REGEX)||[];
+      live.code=live[1].match(PRE_REGEX)||[];
       live.titleDes=[];
       while(titleDes=TITLE_REGEX.exec(live[1])){
         live.titleDes.push(titleDes[1]);
@@ -190,8 +190,8 @@ Parser.prototype.assembleLiveTemplates = function () {
     demoBlock.example = `<${live._templateName} ref="${live._templateName}"/>`;
     demoBlock.title=live.titleDes[0]?parse.render(live.titleDes[0]):"";
     demoBlock.description=live.titleDes[1]?parse.render(live.titleDes[1]):"";
-    demoBlock.hljsCode=parse.render(this.code[0]);
-    demoBlock.code=this.code[1].replace(/(^\s*)|(\s*)$/g,"");
+    demoBlock.hljsCode=parse.render(live.code[0]);
+    demoBlock.code=live.code[1].replace(/(^\s*)|(\s*)$/g,"");
     let _template=this.options.transDemo(demoBlock);
     // Insert component before it's live block
     template =
